@@ -199,6 +199,56 @@ namespace MyOOP
             }
             label9.Text = NewMemory.counters.ToString();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            //傳統建構子初始化
+            //AB ss = new AB();
+            //AB ss1 = new AB(8,8,8);
+            //List<AB> abs = new List<AB>();
+            //abs.Add(ss);
+            //abs.Add(ss1);
+            //this.dataGridView4.DataSource = abs;
+            /******************************/
+            //物件初始化
+            AB sfd = new AB { p1 = 100, p2 = 100, p3 = 200 };
+            List<AB> abs = new List<AB>();
+            abs.Add(sfd);
+            abs.Add(new AB { p1 = 22, p2 = 33, p3 = 44 });
+            this.dataGridView4.DataSource = abs;
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(ClsBanking.InterestRate.ToString());//靜態屬性
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    class AB
+    {
+        public int p1 { get; set; }
+        public int p2 { get; set; }
+        public int p3 { get; set; }
+        public AB()
+        {
+            
+        }
+        public AB(int P1)
+        {
+            p1 = P1;
+        }
+
+        public AB(int P1, int P2, int P3)
+        {
+            p1 = P1;
+            p2 = P2;
+            p3 = P3;
+        }
     }
 
 

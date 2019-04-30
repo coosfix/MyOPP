@@ -56,6 +56,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.button20 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button18 = new System.Windows.Forms.Button();
@@ -121,6 +122,7 @@
             this.groupBox3.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -368,6 +370,7 @@
             this.button25.TabIndex = 5;
             this.button25.Text = "Static  Method";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // tabPage5
             // 
@@ -392,6 +395,7 @@
             this.button26.TabIndex = 4;
             this.button26.Text = "Static Property";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // label5
             // 
@@ -426,6 +430,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.dataGridView4);
             this.tabPage4.Controls.Add(this.button20);
             this.tabPage4.Controls.Add(this.groupBox2);
             this.tabPage4.Controls.Add(this.button18);
@@ -440,6 +445,14 @@
             this.tabPage4.Text = "Constructor / Destructor";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(506, 19);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView4.TabIndex = 12;
+            // 
             // button20
             // 
             this.button20.Location = new System.Drawing.Point(180, 137);
@@ -449,6 +462,7 @@
             this.button20.TabIndex = 11;
             this.button20.Text = "C# 3.0  Object Initializer";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // groupBox2
             // 
@@ -1093,6 +1107,7 @@
             this.groupBox3.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage7.ResumeLayout(false);
@@ -1206,5 +1221,6 @@
         private NWDataSet nwDataSet1;
         private NWDataSetTableAdapters.CustomersTableAdapter customersTableAdapter1;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView4;
     }
 }

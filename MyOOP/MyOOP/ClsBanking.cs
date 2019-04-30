@@ -83,19 +83,28 @@ namespace MyOOP
         public void Deposit(decimal money)
         {
             this._balance += money;
-        }
+        }//存錢
 
         public decimal Withdraw(decimal money)
         {
             this._balance -= money;
             return this._balance;
+        }//提款
+
+        public static int InterestRate//靜態屬性
+        {
+            get
+            {
+                return 3;
+            }
         }
-
-
-
+        public static string Myname(string i)//靜態方法
+        {
+            return "123";
+        }
         ~ClsBanking()//解構子
         {
-            MessageBox.Show("記憶體回收");
+            //MessageBox.Show("記憶體回收");
         }
         public void Disposed()
         {
