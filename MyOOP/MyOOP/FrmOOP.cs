@@ -159,6 +159,59 @@ namespace MyOOP
           
         }
 
-        
+        private void button22_Click(object sender, EventArgs e)
+        {
+            ClsBanking user = new ClsBanking();//建構子
+            MessageBox.Show(user._balance.ToString());
+            ClsBanking user2 = new ClsBanking(1000);//建構子
+            MessageBox.Show(user._balance.ToString());
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            ClsBanking user = new ClsBanking();
+            user = null;
+
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            GC.Collect();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            ClsBanking user = new ClsBanking();
+            user.Disposed();//......
+
+            //using (ClsBanking user2 = new ClsBanking())//interface
+            //{
+
+            //}
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 5000; i++)
+            {
+                NewMemory x = new NewMemory();
+            }
+            label9.Text = NewMemory.counters.ToString();
+        }
+    }
+
+
+    class NewMemory
+    {
+        internal static int counters;
+        public NewMemory()
+        {
+            counters++;
+        }
+        ~NewMemory()
+        {
+            counters--;
+        }
     }
 }

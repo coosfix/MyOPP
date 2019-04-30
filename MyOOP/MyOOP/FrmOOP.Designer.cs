@@ -311,7 +311,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(911, 284);
+            this.tabPage6.Size = new System.Drawing.Size(911, 230);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "繼承多型";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -378,7 +378,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(911, 284);
+            this.tabPage5.Size = new System.Drawing.Size(911, 230);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Static";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -422,6 +422,7 @@
             this.button19.TabIndex = 0;
             this.button19.Text = "new MemoryTest()";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // tabPage4
             // 
@@ -434,7 +435,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(911, 284);
+            this.tabPage4.Size = new System.Drawing.Size(911, 230);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Constructor / Destructor";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -472,6 +473,7 @@
             this.button18.TabIndex = 9;
             this.button18.Text = "Dispose";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -482,6 +484,7 @@
             this.button17.TabIndex = 8;
             this.button17.Text = "GC.Collect()";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button21
             // 
@@ -492,6 +495,7 @@
             this.button21.TabIndex = 7;
             this.button21.Text = "~ ClsBanking";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -502,6 +506,7 @@
             this.button22.TabIndex = 6;
             this.button22.Text = "new ClsBanking()";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button50
             // 
@@ -585,7 +590,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(911, 284);
+            this.tabPage7.Size = new System.Drawing.Size(911, 230);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Others";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -652,7 +657,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(911, 284);
+            this.tabPage1.Size = new System.Drawing.Size(911, 230);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Property";
             this.tabPage1.UseVisualStyleBackColor = true;

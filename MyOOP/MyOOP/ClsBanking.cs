@@ -3,12 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MyOOP
 {
     class ClsBanking
     {
-        public decimal _balance;
+
+
+        public ClsBanking()//建構子
+        {
+            
+        }
+        public ClsBanking(decimal money)//建構子多載
+        {
+            _balance += money;
+        }
+
+        public decimal _balance { get; set; }
         //將資料分裝在類別
         public decimal balance
         {
@@ -77,6 +89,17 @@ namespace MyOOP
         {
             this._balance -= money;
             return this._balance;
+        }
+
+
+
+        ~ClsBanking()//解構子
+        {
+            MessageBox.Show("記憶體回收");
+        }
+        public void Disposed()
+        {
+            //釋放資源
         }
     }
 }
